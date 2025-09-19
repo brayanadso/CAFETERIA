@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+body{
+    background-color: #3b141c;
+}
+
+nav{
+    background-color: #3b141c;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 70%;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;   
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+nav ul li a:hover{
+    background-color: #f3961c;
+    border-radius: 100px;
+    width: 100px;
+    height: 400px;
+}
+.title{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 8px;
+    max-width: 300px ;
+}
+.titulo{
+    color: #f3961c;
+    font-family: "Miniver", sans-serif;
+    font-size: 48px;
+}
+.subtitulo{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 8px;
+    max-width: 300px ;
+}
+.descripcion{
+    color: #fff;
+    margin-top: 8px;
+    max-width: 380px ;
+}
+.imagen{
+    margin-left: 65%;
+    margin-top: -420px;
+}
+.boton{
+    background-color: #f3961c;
+    border-radius: 100px;
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    border: #3b141c;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color:  #252525 ;
+    color: white;
+}
