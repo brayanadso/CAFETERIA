@@ -20,18 +20,21 @@ nav ul li {
     display: inline;
     margin: 0 15px;   
 }
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-nav ul li a:hover{
-    background-color: #f3961c;
-    border-radius: 100px;
-    width: 100px;
-    height: 400px;
-}
+ nav a {
+      color: white;                /* color inicial del texto */
+      text-decoration: none;        /* quita subrayado */
+      padding: 8px 15px;            /* espacio interno */
+      margin: 0 5px;                /* separación entre enlaces */
+      transition: all 0.3s ease;   /* transición suave */
+      display: inline-block;        /* para aplicar padding y border-radius */
+      border-radius: 5px;           /* esquinas redondeadas por defecto */
+    }
+
+    nav a:hover {
+      background-color: #f3961c;    /* fondo amarillo al pasar el cursor */
+      color: black;                /* texto negro para contraste */
+      border-radius: 100px;         /* esquinas más redondeadas al hover */
+    }
 .title{
     color: #fff;
     font-size: 30px;

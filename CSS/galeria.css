@@ -3,71 +3,119 @@
 body{
     background-color: rgba(rgb(253, 253, 253), rgb(175, 174, 174), rgb(103, 103, 104), alpha)
 }
+
+nav{
+    background-color: #3b141c;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+  
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 60%;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;   
+}
+
+
+ nav a {
+      color: white;                /* color inicial del texto */
+      text-decoration: none;        /* quita subrayado */
+      padding: 8px 15px;            /* espacio interno */
+      margin: 0 5px;                /* separación entre enlaces */
+      transition: all 0.3s ease;   /* transición suave */
+      display: inline-block;        /* para aplicar padding y border-radius */
+      border-radius: 5px;           /* esquinas redondeadas por defecto */
+    }
+
+    nav a:hover {
+      background-color: #f3961c;    /* fondo amarillo al pasar el cursor */
+      color: black;                /* texto negro para contraste */
+      border-radius: 100px;         /* esquinas más redondeadas al hover */
+    }
 .title{
     color: #fff;
     font-size: 30px;
     margin-top: 8px;
     max-width: 300px ;
 }
-nav{
-    background-color: #3b141c;
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-left: 70%;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;   
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-nav ul li a:hover{
-    background-color: #f3961c;
-    border-radius: 100px;
-    width: 100px;
-    height: 400px;
-}
 .titulo{
     color: #000000;
     font-size: 48px;
     text-align: center;
 }
-.imagen-arriba{
-    width: 300px;
-    height: 200px;
-    display: flex;
-    margin: 8px;
-    padding: 10px;
-    border-radius: 18px ;
-    position: relative;
-    gap: 20px;
-}
-.arreglo{
-    width: 300px;
-    height: 200px;
-    display: flex;
-    margin: 8px;
-    padding: 10px;
-    border-radius: 18px ;
-    position: relative;
-    gap: 20px;
+
+.imagenes {
+  display: flex;             /* los pone en fila */
+  gap: 25px;                 /* espacio entre tarjetas */
+  justify-content: center;  /* centra horizontalmente */
 }
 
+.imagenes .card {
+  width: 250px;              /* mismo ancho para todas */
+  height: 200px;             /* mismo alto para todas */
+  overflow: hidden;          /* recorta la imagen que sobresalga */
+  border-radius: 8px;
+  margin-top: 40px;
+  box-shadow: 5px 5px 5px 5px rgb(136, 158, 147);       /* opcional: esquinas redondeadas */
+  
+}
+
+.imagenes .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* llena sin deformar */
+  display: block;
+  
+}
+.imagenes .card img:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+/*IMAGENES HACIA ABAJO*/
+.imagenes-abajo {
+  display: flex;             /* los pone en fila */
+  gap: 15px;                 /* espacio entre tarjetas */
+  justify-content: center;  /* centra horizontalmente */
+}
+
+.imagenes-abajo .card {
+  width: 250px;              /* mismo ancho para todas */
+  height: 200px;             /* mismo alto para todas */
+  overflow: hidden;          /* recorta la imagen que sobresalga */
+  border-radius: 8px;        /* opcional: esquinas redondeadas */
+  margin-top: 40px;
+  box-shadow: 5px 5px 5px 5px rgb(136, 158, 147); 
+}
+
+.imagenes-abajo .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* llena sin deformar */
+  display: block;
+}
+.imagenes-abajo .card img:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
 .underline {
   width: 60px; 
   height: 5px;
   background-color: orange;
   margin: auto;
   margin-top: -30px;
-  border-radius: 2px; 
+  border-radius: 2px;
+  transition: 0.3s ease;
+  cursor: pointer; 
+}
+
+.underline:hover{
+    background-color: orange;
+    transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }

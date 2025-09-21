@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+body {
+  margin: 0; /* elimina márgenes por defecto */
+  min-height: 100vh; /* asegura que cubra toda la pantalla */
+  background: linear-gradient(
+    to bottom,               /* dirección del degradado */
+    rgba(255, 255, 255, 1),  /* blanco arriba */
+    rgb(203, 201, 201)   /* gris suave abajo */);
+}
+
+.title{
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: bold;
+}
+
+.container{
+    margin-top: 150px;
+    margin-left: 20%;
+}
+.container-header{
+    margin-left: 60%;
+    margin-top: -300px;
+}
+.requisito{
+font-family: italic;
+}
+.todo{
+    border-radius: 12px;
+    height: 30px;
+    width: 70%;
+    color: #000000;
+    background-color: rgb(244, 241, 238);
+    text-align: center;
+    border: 2px solid #000;
+}
+.text{
+     border-radius: 12px;
+    height: 80px;
+    width: 70%;
+    color: #000000;
+    background-color: rgb(244, 241, 238);
+    text-align: center;
+    border: 2px solid #000;
+
+}
+.boton{
+    border-radius: 22px;
+    height: 50px;
+    width: 15%;
+    color: #000000;
+    background-color: orange;
+    text-align: center;
+    border: 2px solid #000;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: orangered ;
+    color: white;
+}
+.underline {
+  width: 90px; 
+  height: 5px;
+  background-color: orange;
+  margin: auto;
+  margin-top: -30px;
+  border-radius: 2px;
+  transition: 0.3s ease;
+    cursor: pointer;  
+}
+.underline:hover{
+    background-color: orange;
+    transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
