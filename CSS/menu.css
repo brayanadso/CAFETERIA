@@ -1,39 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
 
-body{
-    background-color: #252525;
+body {
+  margin: 0; /* elimina márgenes por defecto */
+  min-height: 100vh; /* asegura que cubra toda la pantalla */
+  background: linear-gradient(
+    to bottom,               /* dirección del degradado */
+    rgb(237, 235, 226),  /* blanco arriba */
+    rgb(100, 93, 93)   /* gris suave abajo */);
 }
-.title{
-    color: #fff;
-    font-size: 30px;
-    margin-top: 8px;
-    max-width: 300px ;
-}
+
 nav{
     background-color: #3b141c;
+    color: #fff;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+    
+}
+ ul {
+    list-style: none;
+    display: flex;
+    gap: 20px ;
+   
+}
+ ul li {
     text-decoration: none;
-    list-style: none;
-
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-left: 70%;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;   
+    color: #fff;
+    transition: color 0.3s; 
+    
 }
 
+ul li a:hover {
+      color: #000000;
+    }
+
+
+    /* Ocultamos el checkbox */
+    #menu-toggle {
+      display: none;
+    }
+
+    /* Icono hamburguesa */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      margin-left: auto;
+    }
+
+    .hamburger span {
+       width: 25px;
+      height: 3px;
+      background-color: orange;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
  nav a {
-      color: white;                /* color inicial del texto */
+      color: rgb(255, 255, 255);                /* color inicial del texto */
       text-decoration: none;        /* quita subrayado */
       padding: 8px 15px;            /* espacio interno */
       margin: 0 5px;              /* separación entre enlaces */
       transition: all 0.3s ease;   /* transición suave */
       display: inline-block;        /* para aplicar padding y border-radius */
-      border-radius: 5px;           /* esquinas redondeadas por defecto */
+      border-radius: 5px;         /* esquinas redondeadas por defecto */
     }
 
     nav a:hover {
@@ -41,50 +73,88 @@ nav ul li {
       color: black;                /* texto negro para contraste */
       border-radius: 100px;         /* esquinas más redondeadas al hover */
     }
-.titulo{
+    .logo{
     color: #fff;
+    font-size: 42px;
+    text-align: center;
+    }
+.titulo{
+    color: #424040;
     font-size: 48px;
     text-align: center;
+    
 }
-.subtitulo{
+.titulo:hover{
+    color: #000000;
+}
+.container.subtitulo{
     color: #fff;
     font-size: 30px;
     margin-top: 8px;
     max-width: 300px ;
+    text-align: center;
 }
-.descripcion{
+.contenedor .descripcion{
     color: #fff;
-    margin-top: 8px;
-    max-width: 380px ;
+    font-size: 15px;
+    text-align: center;
+    
 }
 .contenedor{
-    width: 300px;
-    height: 480px ;
+    background: linear-gradient(
+    to bottom,               /* dirección del degradado */
+    rgb(137, 151, 158),  /* blanco arriba */
+    rgb(35, 34, 34)   /* gris suave abajo */);
+    width: 500px;
+    height: 600px ;
     padding: 10px;
     box-sizing: border-box;
     position: relative;
     border-radius: 20px;
     text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+}
+.contenedor:hover{
+   transform: translateY(-5px);
+   transition: transform 0.3s ease; 
 }
 .contenedor-abajo{
-    width: 300px;
-    height: 480px ;
+    background: linear-gradient(
+    to bottom,               /* dirección del degradado */
+    rgb(137, 151, 158),  /* blanco arriba */
+    rgb(35, 34, 34)   /* gris suave abajo */);
+    width: 500px;
+    height: 600px ;
     padding: 10px;
     margin-top: 100px;
     box-sizing: border-box;
     position: relative;
     border-radius: 20px;
     text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
+.contenedor-.contenedor-abajo{
+
+   transform: translateY(-5px);
+   transition: transform 0.3s ease; 
+}
+.contenedor img{
+  width: 300px;
+  height: 350px;
+}
+
 section{
     display: flex;
     justify-content: center;
-    gap: 22%;
+    gap: 22px;
 }
 .underline {
   width: 60px; 
   height: 5px;
-  background-color: orange;
+  background-color: rgb(6, 6, 6);
   margin: auto;
   margin-top: -30px;
   border-radius: 2px; 
@@ -96,3 +166,105 @@ section{
     transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
+.comprar{
+  border-radius: 100px;
+  background-color: #000000;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.comprar:hover{
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.detalle{
+  border-radius: 100px;
+  background-color: #000000;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+}
+.detalle:hover{
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+.carrito{
+  margin-left: 22px;
+}
+.fa-cart-shopping{
+  font-size: 22px;
+  color: rgb(0, 229, 255);
+  cursor: pointer;
+  transition: trasform 0.3s ease,color 0.3s ease;
+
+}
+.fa-cart-shopping:hover{
+ transform: scale(1,2);
+ color: rgb(0, 0, 0);
+}
+/* Responsive */
+    @media (max-width: 768px) {
+      ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        font-style: italic;
+        top: 60px;
+        left: 50%;
+        width: 50%;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      /* cuando se activa el checkbox, aparece el menú */
+      #menu-toggle:checked + label + ul {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      /* animación para convertir la hamburguesa en X */
+      #menu-toggle:checked + label .line1 {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      #menu-toggle:checked + label .line2 {
+        opacity: 0;
+      }
+      #menu-toggle:checked + label .line3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+ @media (max-width: 768px) {
+  section {
+    flex-direction: column; 
+    align-items: center;    
+  }
+  .contenedor{
+   margin-left: -29%;
+   margin: 10px;
+}
+
+.contenedor-abajo{
+   margin-left: -29%;
+   margin: 10px;
+}
+.subtitulo{
+   margin-left: 100px;
+    font-size: 20px;
+}
+.descripcion{
+    margin-left: 100px;
+    font-size: 12px;
+}
+}
+

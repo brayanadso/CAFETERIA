@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/home.css">
-
     <title>TIENDA DE CAFE</title>
 </head>
-<nav>
-    <h1 class="title"> ☕️ Coffe</h1>
-    <ul>
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./contacto.html">Contactenos</a></li>
-    </ul>
-</nav>
-        <div class="contenedor">
-            
-            <h3 class="titulo">El mejor cafè</h3>
-            <h4 class="subtitulo">Haz tu dìa genial con nuestro especial Coffee</h4> 
-            <p class="descripcion">Bienvenido a nuestro paraìso del cafè,donde cada 
-                grano cuenta una historia y cada taza despierta alegria</p>
-              
-                    <button class="boton">Ordenar ahora</button>
-                    <button class="boton">Contactenos</button>
+
+        <header>
+            <nav>
+                <div class="logo"> ☕Cofee</div>
                 
-        </div>
-    <div class="imagen">
-        <img src="./IMG/coffee-hero-section.png" alt="">
-    </div>
+                <!-- Checkbox oculto -->
+                <input type="checkbox" id="menu-toggle">
+                
+                <!-- Label que activa el checkbox -->
+                <label for="menu-toggle" class="hamburger">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </label>
+
+                <!-- Menú -->
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./contacto.html">Contactenos</a></li>
+                </ul>
+            </nav>
+        </header>
     
+    <body>
+            <section class="container"> 
+                <div class="contenedor">
+                    
+                    <h3 class="titulo">El mejor cafè</h3>
+                    <h4 class="subtitulo">Haz tu dìa genial con nuestro especial Coffee</h4> 
+                    <p class="descripcion">Bienvenido a nuestro paraìso del cafè,donde cada 
+                        grano cuenta una historia y cada taza despierta alegria</p>
+                    
+                            <button class="boton">Ordenar ahora</button>
+                            <button class="boton">Contactenos</button>  
+                </div>
+                <div class="imagen">
+                    <img src="./IMG/coffee-hero-section.png" alt="">
+                </div>
+    </section>
 </body>
 </html>

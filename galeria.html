@@ -6,31 +6,44 @@
     <link rel="stylesheet" href="./CSS/galeria.css">
     <title>Galeria</title>
 </head>
-<nav>
-    <h1 class="title"> ☕️ Coffe</h1>
-    <ul>
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./contacto.html">Contactenos</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./contacto.html">Contactenos</a></li>
-         
-</nav>
+<header>
+            <nav>
+                <div class="logo"> ☕Cofee</div>
+                
+                <!-- Checkbox oculto -->
+                <input type="checkbox" id="menu-toggle">
+                
+                <!-- Label que activa el checkbox -->
+                <label for="menu-toggle" class="hamburger">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </label>
+
+                <!-- Menú -->
+                <ul>
+                     <li><a href="./home.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./contacto.html">Contactenos</a></li>
+                </ul>
+            </nav>
+        </header>
 <body>
 
     <h1 class="titulo">Galeria</h1>
     <div class="underline"></div>
-    
-    <div class="imagenes">
-        <div class="card"><img src="./IMG/gallery-1.jpg"> </div>
-         <div class="card"><img src="./IMG/gallery-2.jpg"></div>
-        <div class="card"><img src="./IMG/gallery-3.jpg"></div>   
-    </div>  
-    <div class="imagenes-abajo">
-        <div class="card"><img src="./IMG/gallery-4.jpg"></div>
-        <div class="card"> <img src="./IMG/gallery-5.jpg"></div>
-        <div class="card"><img src="./IMG/gallery-6.jpg"></div>  
-    </div> 
+    <section class="galeria">
+        <div class="imagenes">
+            <div class="card"><img src="./IMG/gallery-1.jpg"> </div>
+            <div class="card"><img src="./IMG/gallery-2.jpg"></div>
+            <div class="card"><img src="./IMG/gallery-3.jpg"></div>   
+        </div>  
+        <div class="imagenes-abajo">
+            <div class="card"><img src="./IMG/gallery-4.jpg"></div>
+            <div class="card"> <img src="./IMG/gallery-5.jpg"></div>
+            <div class="card"><img src="./IMG/gallery-6.jpg"></div>  
+        </div> 
+    </section>
 </body>
 </html>

@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/menu.css">
     <title>Menu</title>
 </head>
-<nav>
-    <h1 class="title"> ☕️ Coffe</h1>
-    <ul>
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./contacto.html">Contactenos</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./contacto.html">Contactenos</a></li>
-    </ul>
-</nav>
+<header>
+            <nav>
+                <div class="logo"> ☕Cofee</div>
+                
+                <!-- Checkbox oculto -->
+                <input type="checkbox" id="menu-toggle">
+                
+                <!-- Label que activa el checkbox -->
+                <label for="menu-toggle" class="hamburger">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </label>
+
+                <!-- Menú -->
+                <ul>
+                     <li><a href="./home.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./contacto.html">Contactenos</a></li>
+                </ul>
+                <div class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </nav>
+        </header>
 <body>
+    
     <h1 class="titulo">OUR MENU</h1>
     <div class="underline"></div>
     <section>
@@ -25,16 +42,22 @@
             <img src="./IMG/hot-beverages.png" alt="">
             <h3 class="subtitulo">Hot Beverages</h3>
             <p class="descripcion">Wide range of Steaming hot coffe to make you fresh and light.</p>
+            <button class="comprar">Comprar</button>
+            <button class="detalle">Mas detalles</button>
         </div>
         <div class="contenedor">
             <img src="./IMG/cold-beverages.png" alt="">
             <h3 class="subtitulo">Cold Beverages</h3>
             <p class="descripcion">Creamy and a frothy cold coffe to make you cool.</p>
+            <button class="comprar">Comprar</button>
+            <button class="detalle">Mas detalles</button>
         </div>
         <div class="contenedor">
             <img src="./IMG/refreshment.png" alt="">
             <h3 class="subtitulo">Refreshment</h3>
             <p class="descripcion">Fruit and icy refreshing drink to make feel refresh.</p>
+            <button class="comprar">Comprar</button>
+            <button class="detalle">Mas detalles</button>
         </div>
         
     </section>
@@ -44,16 +67,22 @@
             <img src="./IMG/burger-frenchfries.png" alt="">
             <h3 class="subtitulo">Hamburguesa 🍔</h3>
             <p class="descripcion">Muy buena calidad y sabrosas</p>
+            <button class="comprar">Comprar</button>
+            <button class="detalle">Mas detalles</button>
         </div>
         <div class="contenedor-abajo">
             <img src="./IMG/desserts.png" alt="">
             <h3 class="subtitulo">Crema con fresas 🍓</h3>
             <p class="descripcion">Para las calores de estos dias</p>
+            <button class="comprar">Comprar</button>
+            <button class="detalle">Mas detalles</button>
         </div>
         <div class="contenedor-abajo">
             <img src="./IMG/special-combo.png" alt="">
             <h3 class="subtitulo">Perros Clientes 🌭</h3>
             <p class="descripcion">Lo mejor en sabor y precios </p>
+            <button class="comprar">Comprar</button>
+            <button class="detalle">Mas detalles</button>
         </div>
         
     </section>
